@@ -1,0 +1,31 @@
+{
+  "name": "discborg",
+  "version": "1.0.0",
+  "description": "A Discordbot in TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postbuild": "cpy --cwd=src --parents '**/*' '!**/*.ts' ../dist/",
+    "build": "tsc",
+    "start": "node ./dist/bot.js",
+    "dev": "nodemon ./dist/bot.js"
+  },
+  "author": "Mimung",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "cpy-cli": "^3.1.1",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@types/mongodb": "^3.6.18",
+    "dayjs": "^1.10.5",
+    "discord.js": "^12.5.3",
+    "dotenv": "^9.0.2",
+    "mongodb": "^3.6.9",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

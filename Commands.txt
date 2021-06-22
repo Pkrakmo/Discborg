@@ -1,0 +1,3 @@
+sudo systemctl status discordbot
+sudo systemctl start discordbot
+sudo systemctl stop discordbot

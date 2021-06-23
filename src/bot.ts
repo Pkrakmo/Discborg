@@ -60,4 +60,4 @@ client.on('message', (message: Message) => {
 
 });
 
-client.login(process.env.DISCORDJS_BOT_TOKEN)
+client.login(process.env.TESTDISCORDJS_BOT_TOKEN)
